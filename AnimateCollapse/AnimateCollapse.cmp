@@ -1,0 +1,7 @@
+<aura:component description="AnimateCollapse">
+	<aura:attribute name="isCollapsed" type="Boolean" default="true" />
+
+	<div aura:id="content" class="{!'content-area' + (v.isCollapsed ? ' collapsed' : '')}">
+		{!v.body}
+	</div>
+</aura:component>
